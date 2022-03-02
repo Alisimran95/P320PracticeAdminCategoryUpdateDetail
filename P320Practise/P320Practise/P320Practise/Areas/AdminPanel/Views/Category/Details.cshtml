@@ -1,0 +1,27 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                @if (@Model.IsMain)
+                {
+                    <h4>@Model.Name</h4>
+                    <ul>
+                        @foreach(var i in @Model.Children)
+                        {
+                            <li style="list-style-type: none">@i.Name</li>
+                            
+                        }
+                    </ul>
+                    <img src="~/assets/images/@Model.Image"/>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
