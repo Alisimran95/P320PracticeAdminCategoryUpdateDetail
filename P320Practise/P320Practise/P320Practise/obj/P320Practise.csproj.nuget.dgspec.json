@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Downloads\\P320-03-01-22-main\\P320-03-01-22-main\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj": {}
+    "C:\\Users\\User\\Desktop\\GithubMvc\\P320PracticeAdminCategoryUpdateDetail\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Downloads\\P320-03-01-22-main\\P320-03-01-22-main\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj": {
+    "C:\\Users\\User\\Desktop\\GithubMvc\\P320PracticeAdminCategoryUpdateDetail\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\P320-03-01-22-main\\P320-03-01-22-main\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\GithubMvc\\P320PracticeAdminCategoryUpdateDetail\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj",
         "projectName": "P320Practise",
-        "projectPath": "C:\\Users\\User\\Downloads\\P320-03-01-22-main\\P320-03-01-22-main\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\GithubMvc\\P320PracticeAdminCategoryUpdateDetail\\P320Practise\\P320Practise\\P320Practise\\P320Practise.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\P320-03-01-22-main\\P320-03-01-22-main\\P320Practise\\P320Practise\\P320Practise\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\GithubMvc\\P320PracticeAdminCategoryUpdateDetail\\P320Practise\\P320Practise\\P320Practise\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

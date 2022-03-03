@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.IO;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using P320FrontToBack.Areas.AdminPanel.Data;
 using P320Practise.Areas.AdminPanel.Data;
@@ -191,7 +192,7 @@ namespace P320Practise.Areas.AdminPanel.Controllers
             if (!ModelState.IsValid)
                 return View();
 
-            if (category.IsMain)
+            if (existCategory.IsMain)
             {
                 if (category.Photo == null)
                 {
@@ -210,10 +211,15 @@ namespace P320Practise.Areas.AdminPanel.Controllers
                     ModelState.AddModelError("", "1Mb-dan artiq ola bilmez.");
                     return View();
                 }
+                var path = Path.Combine(Constants.ImageFolderPath, existCategory.Image);
+                if (System.IO.File.Exists(path))
+                {
+                    System.IO.File.Delete(path);
+                }
 
                 var fileName = await category.Photo.GenerateFile(Constants.ImageFolderPath);
-
-                category.Image = fileName;
+                existCategory.Image = fileName;
+                await _dbContext.SaveChangesAsync();
             }
             else
             {
